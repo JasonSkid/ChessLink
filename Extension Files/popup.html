@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="vueApp.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>ChessLink Beta</h3>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="extension-toggle" />
+        <label class="form-check-label" for="extension-toggle">On/Off</label>
+      </div>
+    </div>
+
+    <div class="main-menu">
+      <!-- Moved the input for Vue data binding to this section -->
+      <div class="input-div">
+        <label id="depth-label" name="depth-label" for="depth-range" class="form-label">Depth</label>
+        <input class=".form-range" type="range" min="1" max="30" v-model="depth" class="slider" id="depth-range" />
+      </div>
+
+      <div class="input-div">
+        <label id="wait-time-label" name="wait-time-label" for="wait-time-range" class="form-label">Wait time before
+          moving</label>
+        <input class=".form-range" type="range" min="0" max="5000" step="100" class="slider" id="wait-time-range" />
+      </div>
+
+      <!-- Rest of your HTML content -->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
