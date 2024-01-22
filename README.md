@@ -21,11 +21,11 @@ A a chess engine, chromium extension and, auto-mover for www.chess.com and www.l
 
 ## Installation
 
-Install by Going to the extensions page on chromium based browsers
-
-Click on 'Load Unpacked' after unzipping the extension folder, then selsec the unpacked extension folder and it will install directly to your browsers extensions
-![Logo](https://i.imgur.com/M8MHStV.png)
-
+unpack the zip file
+open the chrome extensions page
+make sure developer mode is on
+click load unpacked
+load unzipped folder from this .zip file
 
 ## License
 
